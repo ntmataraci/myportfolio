@@ -29,7 +29,7 @@ useEffect(()=>{fetcher()},[])
             <div className="text-xl font-bold text-center">{item.header}</div>
             <div className="text-sm font-bold text-center">{}</div>
             <div className="p-5">{item.content.split(" ").slice(0,10).join(" ")}</div>
-            <div className="text-center cursor-pointer font-bold brightness-150 dark:brightness-50"><Link href={`http://localhost:3000/posts/${item.slug}`}>Continue to reading </Link></div>
+            <div className="text-center cursor-pointer font-bold brightness-150 dark:brightness-50"><Link href={`./posts/${item.slug}`}>Continue to reading </Link></div>
             </div>
             </div>
             )}
