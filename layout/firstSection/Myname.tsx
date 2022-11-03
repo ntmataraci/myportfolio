@@ -20,7 +20,7 @@ twitter:<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="
         </div>
         <div className="flex gap-5 lg:mt-10 mt-5">
             <div className="fill-white dark:fill-black"><a href="https://github.com/ntmataraci/">{Icons.github}</a></div>
-            <div className="fill-sky-700"><a href="https://www.linkedin.com/ntmataraci/">{Icons.linkedin}</a></div>
+            <div className="fill-sky-700"><a href="https://www.linkedin.com/in/ntmataraci/">{Icons.linkedin}</a></div>
             <div className="fill-sky-500"><a href="https://www.twitter.com/nevzatmataraci/">{Icons.twitter}</a></div>
         </div>
         </div>
