@@ -5,7 +5,7 @@ const [editWindow,setEditedWindow]=useState<null|{header:string,img:string,conte
 
     useEffect( ()=>{
         const fetcher= async()=>{
-            const data=await fetch("http://localhost:3000/api/posts")
+            const data=await fetch("./api/posts")
             const result= await data.json()
             console.log(result)
             setAllData(result)
@@ -16,7 +16,7 @@ const [editWindow,setEditedWindow]=useState<null|{header:string,img:string,conte
         ,[newPost])
 
 const deleteHandler= async (id:string)=>{
-    const data=await fetch("http://localhost:3000/api/delete",{
+    const data=await fetch("./api/delete",{
         method:"POST",
         headers:{
             'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ const editHandler= async (item:any)=>{
 }
 
 const updateHandler= async (id:string) => {
-    const data=await fetch("http://localhost:3000/api/update",{
+    const data=await fetch("./api/update",{
         method:"POST",
         headers:{
             'Content-Type': 'application/json',
