@@ -27,7 +27,7 @@ const darkmode=useSelector((state:RootState)=>state.Information.darkmode)
     return(
        
         <div className={`${darkmode?"dark":"lightMode"}`}>
-        <div><Link href="./">Back Home Page</Link></div>
+        <div><Link href="/">Back Home Page</Link></div>
         {Mydata&&
         <div className=' bg-slate-900 dark:bg-white dark:text-slate-600 min-h-screen py-5 lg:px-10 px-2 text-slate-400 font-Inter flex flex-col justify-items-center justify-center m-auto'>
         <h1 className='m-auto text-2xl'>{Mydata.header}</h1>
