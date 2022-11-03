@@ -12,7 +12,7 @@ const [Mydata,setMyData]=useState<any>()
 useEffect(()=>{
     if(post){
     const fetcher = async ()=>{
-        const data=await fetch("./api/"+post)
+        const data=await fetch("/api/"+post)
         const result=await data.json()
         setMyData(result[0])
         console.log(result)
