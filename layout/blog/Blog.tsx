@@ -5,7 +5,7 @@ const Blog = () => {
     const [data,setData]=useState<null|{header:string,img:string,content:string,slug:string}[]>()
     const [pagination,setPagination]=useState(0)
 const fetcher = async ()=> {
-        const data=await fetch("http://localhost:3000/api/posts")
+        const data=await fetch("./api/posts")
         const result= await data.json()
         console.log(result)
         setData(result)
