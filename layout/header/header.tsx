@@ -34,7 +34,7 @@ const [closedMenu,setClosedMenu]=useState(true)
 }
 <div className="lg:hidden">
 {closedMenu?
-<div className="text-2xl fixed right-5 top-5" onClick={()=>setClosedMenu(false)}><GiHamburgerMenu/></div>
+<div className="text-2xl fixed right-5 top-5 z-[100]" onClick={()=>setClosedMenu(false)}><GiHamburgerMenu/></div>
 :
 <div className="text-2xl fixed right-5 top-5 z-[100]" onClick={()=>setClosedMenu(true)}>X</div>
 }
